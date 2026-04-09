@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniMarket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="navbar-brand">MiniMarket</span>
+            <span id="badge">0</span>
+        </nav>
+    </header>
+    <main>
+        <section class="productList">
+            <div class="card">
+                <h2>Producto 1</h2>
+                <figure>
+                    <img src="product.img" alt="producto-imagen">
+                </figure>
+                <p class="precio">999</p>
+                <button class="btn-agregar"
+                    data-nombre="Producto 1"
+                    data-precio="999">
+                    Añadir al carrito
+                </button>
+            </div>
+        </section>
+        
+        <section class="productList">
+            <div class="card">
+                <h2>Producto 2</h2>
+                <figure>
+                    <img src="product.img" alt="producto-imagen">
+                </figure>
+                <p class="precio">500</p>
+                <button class="btn-agregar"
+                    data-nombre="Producto 2"
+                    data-precio="500">
+                    Añadir al carrito
+                </button>
+            </div>
+        </section>
+        <section class="productList">
+            <div class="card">
+                <h2>Producto 3</h2>
+                <figure>
+                    <img src="product.img" alt="producto-imagen">
+                </figure>
+                <p class="precio">1200</p>
+                <button class="btn-agregar"
+                    data-nombre="Producto 3"
+                    data-precio="1200">
+                    Añadir al carrito
+                </button>
+            </div>
+        </section>
+        <section class="productList">
+            <div class="card">
+                <h2 class="data-nombre">Producto 4</h2>
+                <figure>
+                    <img src="product.img" alt="producto-imagen">
+                </figure>
+                <p class="data-precio">750</p>
+                <button class="btn-agregar"
+                    data-nombre="Producto 4"
+                    data-precio="750">
+                    Añadir al carrito
+                </button>
+            </div>
+        </section>
+       
+        <section id="Cart">
+            <h4>Carrito</h4>
+            <ul id="lista-carrito">
+                <li id="msg-vacio">Tu carrito está vacío</li>
+            </ul>
+            <p>Total: <span id="total">$0</span></p>
+            <button id="btn-vaciar">
+                Vaciar Carrito
+            </button>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2>MiniMarket</h2>
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Productos</a></li>
+        </ul>
+        <p>Desarrollado by: Nombre 2026</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
