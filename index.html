@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,91 +8,77 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar navbar-light bg-light">
             <span class="navbar-brand">MiniMarket</span>
-            <span id="badge">0</span>
+            <span id="badge" class="badge bg-primary">0</span>
         </nav>
     </header>
+
     <main>
-        <section class="productList">
-            <div class="card">
-                <h2>Producto 1</h2>
-                <figure>
-                    <img src="product.img" alt="producto-imagen">
-                </figure>
-                <p class="precio">999</p>
-                <button class="btn-agregar"
-                    data-nombre="Producto 1"
-                    data-precio="999">
-                    Añadir al carrito
-                </button>
+        <div class="container text-center mt-4">
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+                <div class="col">
+                    <div class="card p-3">
+                        <h2>Cama elevada para perros</h2>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_940406-MLU76877832742_062024-O.webp" alt="Cama elevada para perros">
+                        <p class="precio">222.990</p>
+                        <button class="btn btn-info btn-agregar" data-nombre="Cama elevada para perros" data-precio="222990">
+                            Añadir al carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card p-3">
+                        <h2>Pañitos húmedos para mascotas</h2>
+                        <img src="https://www.supermarpet.co/cdn/shop/products/pan__os-humedos-petys-12x50_large.png?v=1654379161" alt="Pañitos húmedos para mascotas">
+                        <p class="precio">12.719</p>
+                        <button class="btn btn-info btn-agregar" data-nombre="Pañitos húmedos para mascotas" data-precio="12719">
+                            Añadir al carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card p-3">
+                        <h2>Pelota interactiva para mascotas</h2>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_793455-CBT93484520027_092025-O.webp" alt="Pelota interactiva para mascotas">
+                        <p class="precio">26.247</p>
+                        <button class="btn btn-info btn-agregar" data-nombre="Pelota interactiva para mascotas" data-precio="26247">
+                            Añadir al carrito
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card p-3">
+                        <h2 class="data-nombre">Enjuague bucal para mascotas</h2>
+                        <img src="https://static.laika.digital/products-3/d2c789804546117a6dea38ea16bba98a_1712611817.jpg" alt="Enjuague bucal para mascotas">
+                        <p class="data-precio">15.390</p>
+                        <button class="btn btn-info btn-agregar" data-nombre="Enjuague bucal para mascotas" data-precio="15390">
+                            Añadir al carrito
+                        </button>
+                    </div>
+                </div>
             </div>
-        </section>
-        
-        <section class="productList">
-            <div class="card">
-                <h2>Producto 2</h2>
-                <figure>
-                    <img src="product.img" alt="producto-imagen">
-                </figure>
-                <p class="precio">500</p>
-                <button class="btn-agregar"
-                    data-nombre="Producto 2"
-                    data-precio="500">
-                    Añadir al carrito
+            
+            <section id="Carrito">
+                <h4>Carrito</h4>
+                <ul id="lista-carrito">
+                    <li id="msg-vacio">Tu carrito está vacío</li>
+                </ul>
+                <p>Total: <span id="total">$0</span></p>
+                <button id="btn-vaciar">
+                    Vaciar Carrito
                 </button>
-            </div>
-        </section>
-        <section class="productList">
-            <div class="card">
-                <h2>Producto 3</h2>
-                <figure>
-                    <img src="product.img" alt="producto-imagen">
-                </figure>
-                <p class="precio">1200</p>
-                <button class="btn-agregar"
-                    data-nombre="Producto 3"
-                    data-precio="1200">
-                    Añadir al carrito
-                </button>
-            </div>
-        </section>
-        <section class="productList">
-            <div class="card">
-                <h2 class="data-nombre">Producto 4</h2>
-                <figure>
-                    <img src="product.img" alt="producto-imagen">
-                </figure>
-                <p class="data-precio">750</p>
-                <button class="btn-agregar"
-                    data-nombre="Producto 4"
-                    data-precio="750">
-                    Añadir al carrito
-                </button>
-            </div>
-        </section>
-       
-        <section id="Cart">
-            <h4>Carrito</h4>
-            <ul id="lista-carrito">
-                <li id="msg-vacio">Tu carrito está vacío</li>
-            </ul>
-            <p>Total: <span id="total">$0</span></p>
-            <button id="btn-vaciar">
-                Vaciar Carrito
-            </button>
-        </section>
+            </section>
+        </div>
     </main>
-    <footer class="footer">
-        <h2>MiniMarket</h2>
-        <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Productos</a></li>
-        </ul>
-        <p>Desarrollado by: Nombre 2026</p>
-    </footer>
-    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
